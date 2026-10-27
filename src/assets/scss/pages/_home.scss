@@ -1,0 +1,32 @@
+.p-home {
+  $b: &;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__hero {
+    min-height: 200px;
+    background-color: var(--el-fill-color-light);
+  }
+
+  &__overview {
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  &__calendar {
+    background-color: var(--el-fill-color-dark);
+  }
+
+  &__records {
+  }
+
+  &__summary {
+    display: grid;
+    min-height: 100px;
+    background-color: var(--el-fill-color-light);
+  }
+}

@@ -1,2 +1,15 @@
 // 引入頁面
 @use "./pages/home";
+
+@use "./organism/blocks";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// 頁面背景
+body {
+  background-color: var(--el-bg-color-page);
+}

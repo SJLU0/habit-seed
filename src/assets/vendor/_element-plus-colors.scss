@@ -1,0 +1,87 @@
+// Element Plus CSS Variables — 色票資料（供未來 Demo.vue 使用）
+// 只保存 CSS 變數名稱，不覆寫 Element Plus 主題。
+// Demo 的 SCSS 可以透過 @use '.../element-plus-colors' as palette;
+// 再使用 @each $group, $colors in palette.$color-groups 產生色票樣式。
+// 官方來源：https://github.com/element-plus/element-plus/blob/dev/packages/theme-chalk/src/common/var.scss
+
+$color-groups: (
+  'background': (
+    'base': '--el-bg-color',
+    'page': '--el-bg-color-page',
+    'overlay': '--el-bg-color-overlay',
+  ),
+  'fill': (
+    'base': '--el-fill-color',
+    'light': '--el-fill-color-light',
+    'lighter': '--el-fill-color-lighter',
+    'extra-light': '--el-fill-color-extra-light',
+    'dark': '--el-fill-color-dark',
+    'darker': '--el-fill-color-darker',
+    'blank': '--el-fill-color-blank',
+  ),
+  'border': (
+    'base': '--el-border-color',
+    'light': '--el-border-color-light',
+    'lighter': '--el-border-color-lighter',
+    'extra-light': '--el-border-color-extra-light',
+    'dark': '--el-border-color-dark',
+    'darker': '--el-border-color-darker',
+    'hover': '--el-border-color-hover',
+  ),
+  'text': (
+    'primary': '--el-text-color-primary',
+    'regular': '--el-text-color-regular',
+    'secondary': '--el-text-color-secondary',
+    'placeholder': '--el-text-color-placeholder',
+    'disabled': '--el-text-color-disabled',
+  ),
+  'primary': (
+    'base': '--el-color-primary',
+    'light-3': '--el-color-primary-light-3',
+    'light-5': '--el-color-primary-light-5',
+    'light-7': '--el-color-primary-light-7',
+    'light-8': '--el-color-primary-light-8',
+    'light-9': '--el-color-primary-light-9',
+    'dark-2': '--el-color-primary-dark-2',
+  ),
+  'success': (
+    'base': '--el-color-success',
+    'light-3': '--el-color-success-light-3',
+    'light-5': '--el-color-success-light-5',
+    'light-7': '--el-color-success-light-7',
+    'light-8': '--el-color-success-light-8',
+    'light-9': '--el-color-success-light-9',
+    'dark-2': '--el-color-success-dark-2',
+  ),
+  'warning': (
+    'base': '--el-color-warning',
+    'light-3': '--el-color-warning-light-3',
+    'light-5': '--el-color-warning-light-5',
+    'light-7': '--el-color-warning-light-7',
+    'light-8': '--el-color-warning-light-8',
+    'light-9': '--el-color-warning-light-9',
+    'dark-2': '--el-color-warning-dark-2',
+  ),
+  'danger': (
+    'base': '--el-color-danger',
+    'light-3': '--el-color-danger-light-3',
+    'light-5': '--el-color-danger-light-5',
+    'light-7': '--el-color-danger-light-7',
+    'light-8': '--el-color-danger-light-8',
+    'light-9': '--el-color-danger-light-9',
+    'dark-2': '--el-color-danger-dark-2',
+  ),
+  'info': (
+    'base': '--el-color-info',
+    'light-3': '--el-color-info-light-3',
+    'light-5': '--el-color-info-light-5',
+    'light-7': '--el-color-info-light-7',
+    'light-8': '--el-color-info-light-8',
+    'light-9': '--el-color-info-light-9',
+    'dark-2': '--el-color-info-dark-2',
+  ),
+  'neutral': (
+    'white': '--el-color-white',
+    'black': '--el-color-black',
+  ),
+);
