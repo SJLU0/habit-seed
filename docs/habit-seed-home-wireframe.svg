@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      .bg { fill: #f3f7f5; }
+      .canvas { fill: #ffffff; stroke: #b8c7c2; stroke-width: 2; }
+      .panel { fill: #fbfdfc; stroke: #8fa49d; stroke-width: 2; }
+      .soft { fill: #e8f3ef; stroke: #79a99f; stroke-width: 2; }
+      .selected { fill: #cfe8e1; stroke: #008f8c; stroke-width: 3; }
+      .line { stroke: #b8c7c2; stroke-width: 2; }
+      .dash { stroke: #79a99f; stroke-width: 2; stroke-dasharray: 8 8; }
+      .title { fill: #183b35; font: 700 34px -apple-system, BlinkMacSystemFont, "PingFang TC", sans-serif; }
+      .heading { fill: #183b35; font: 700 25px -apple-system, BlinkMacSystemFont, "PingFang TC", sans-serif; }
+      .body { fill: #36534d; font: 400 20px -apple-system, BlinkMacSystemFont, "PingFang TC", sans-serif; }
+      .small { fill: #58716b; font: 400 17px -apple-system, BlinkMacSystemFont, "PingFang TC", sans-serif; }
+      .day { fill: #36534d; font: 500 17px -apple-system, BlinkMacSystemFont, "PingFang TC", sans-serif; text-anchor: middle; }
+      .button { fill: #008f8c; }
+      .button-text { fill: #ffffff; font: 600 18px -apple-system, BlinkMacSystemFont, "PingFang TC", sans-serif; text-anchor: middle; dominant-baseline: middle; }
+      .note { fill: #008f8c; font: 600 17px -apple-system, BlinkMacSystemFont, "PingFang TC", sans-serif; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#008f8c" />
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1600" height="1000" />
+  <text class="title" x="80" y="62">HabitSeed 首頁桌機版 Wireframe</text>
+
+  <rect class="canvas" x="80" y="92" width="1440" height="830" rx="22" />
+
+  <!-- Hero -->
+  <rect class="soft" x="120" y="132" width="1360" height="160" rx="18" />
+  <text class="heading" x="160" y="185">HabitSeed 🌱</text>
+  <text class="body" x="160" y="226">每一次投入，都是成長的開始。</text>
+  <text class="small" x="160" y="260">背景插圖／歡迎區塊</text>
+  <rect class="button" x="1280" y="181" width="158" height="54" rx="10" />
+  <text class="button-text" x="1359" y="208">習慣設定</text>
+
+  <!-- Calendar -->
+  <rect class="panel" x="120" y="324" width="880" height="548" rx="18" />
+  <text class="heading" x="160" y="374">2026 年 10 月</text>
+  <text class="body" x="912" y="374" text-anchor="end">‹　›</text>
+  <line class="line" x1="160" y1="400" x2="960" y2="400" />
+
+  <!-- Week headings -->
+  <text class="small" x="218" y="438" text-anchor="middle">一</text>
+  <text class="small" x="332" y="438" text-anchor="middle">二</text>
+  <text class="small" x="446" y="438" text-anchor="middle">三</text>
+  <text class="small" x="560" y="438" text-anchor="middle">四</text>
+  <text class="small" x="674" y="438" text-anchor="middle">五</text>
+  <text class="small" x="788" y="438" text-anchor="middle">六</text>
+  <text class="small" x="902" y="438" text-anchor="middle">日</text>
+
+  <!-- Calendar grid -->
+  <path class="line" fill="none" d="M160 458H960 M160 538H960 M160 618H960 M160 698H960 M160 778H960 M160 858H960" />
+  <path class="line" fill="none" d="M274 458V858 M388 458V858 M502 458V858 M616 458V858 M730 458V858 M844 458V858" />
+
+  <!-- Dates -->
+  <text class="day" x="560" y="486">1</text><text class="day" x="674" y="486">2</text><text class="day" x="788" y="486">3</text><text class="day" x="902" y="486">4</text>
+  <text class="day" x="218" y="566">5</text><text class="day" x="332" y="566">6</text><text class="day" x="446" y="566">7</text><text class="day" x="560" y="566">8</text><text class="day" x="674" y="566">9</text><text class="day" x="788" y="566">10</text><text class="day" x="902" y="566">11</text>
+  <text class="day" x="218" y="646">12</text><text class="day" x="332" y="646">13</text><text class="day" x="446" y="646">14</text><text class="day" x="560" y="646">15</text><text class="day" x="674" y="646">16</text><text class="day" x="788" y="646">17</text><text class="day" x="902" y="646">18</text>
+  <text class="day" x="218" y="726">19</text><text class="day" x="332" y="726">20</text><text class="day" x="446" y="726">21</text><text class="day" x="560" y="726">22</text><text class="day" x="674" y="726">23</text><text class="day" x="788" y="726">24</text><text class="day" x="902" y="726">25</text>
+  <text class="day" x="218" y="806">26</text><text class="day" x="332" y="806">27</text><text class="day" x="446" y="806">28</text><text class="day" x="560" y="806">29</text><text class="day" x="674" y="806">30</text><text class="day" x="788" y="806">31</text>
+
+  <!-- Selected date and completion markers -->
+  <rect class="selected" x="278" y="764" width="108" height="88" rx="10" />
+  <text class="day" x="314" y="798">27</text>
+  <circle cx="332" cy="828" r="6" fill="#008f8c" />
+  <text class="note" x="366" y="798" text-anchor="middle">＋</text>
+  <circle cx="560" cy="516" r="5" fill="#008f8c" />
+  <circle cx="788" cy="596" r="5" fill="#008f8c" />
+  <circle cx="446" cy="676" r="5" fill="#008f8c" />
+
+  <!-- Records panel -->
+  <rect class="panel" x="1028" y="324" width="452" height="548" rx="18" />
+  <text class="heading" x="1068" y="374">10 月 27 日</text>
+  <rect class="button" x="1280" y="342" width="158" height="48" rx="9" />
+  <text class="button-text" x="1359" y="366">＋新增紀錄</text>
+  <line class="line" x1="1068" y1="410" x2="1440" y2="410" />
+
+  <!-- Accordion item 1 expanded -->
+  <rect class="soft" x="1068" y="438" width="372" height="154" rx="12" />
+  <text class="body" x="1094" y="476">▼　閱讀</text>
+  <line class="dash" x1="1094" y1="497" x2="1414" y2="497" />
+  <text class="small" x="1094" y="534">Mini　讀 5 頁</text>
+  <text class="small" x="1094" y="566">完成紀錄已儲存</text>
+
+  <!-- Accordion item 2 closed -->
+  <rect class="panel" x="1068" y="610" width="372" height="72" rx="12" />
+  <text class="body" x="1094" y="654">▶　運動</text>
+
+  <!-- Empty space hint -->
+  <rect x="1068" y="710" width="372" height="118" rx="12" fill="#ffffff" stroke="#b8c7c2" stroke-width="2" stroke-dasharray="8 8" />
+  <text class="small" x="1254" y="754" text-anchor="middle">最多顯示 5 個習慣</text>
+  <text class="small" x="1254" y="787" text-anchor="middle">通常只展開目前查看的一項</text>
+
+  <!-- Flow annotation -->
+  <path d="M925 798 C985 798 991 748 1042 748" fill="none" stroke="#008f8c" stroke-width="3" marker-end="url(#arrow)" />
+  <text class="note" x="948" y="776">選日期後更新右側</text>
+
+  <text class="small" x="120" y="962">月曆負責選擇日期；右側負責查看與新增該日紀錄。</text>
+</svg>
