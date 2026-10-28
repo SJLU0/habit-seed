@@ -1,4 +1,10 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+import dayjs from "dayjs";
+
+const selectedDate = ref(new Date());
+const formatSelectedDate = dayjs(selectedDate.value).format("YYYY-MM-DD");
+</script>
 
 <template>
   <main class="p-home">
@@ -11,11 +17,17 @@
     <!-- 主要總覽 -->
     <section class="p-home__overview">
       <!-- 月曆 -->
-      <div class="p-home__calendar"></div>
+      <div class="p-home__calendar">
+        <el-calendar v-model="selectedDate" />
+      </div>
 
       <!-- 選取日期後跳出的每日記錄 -->
       <div class="p-home__records">
-        <div class="o-cardBlock"></div>
+        <div class="o-cardBlock">
+          <div class="o-cardBlock__head">
+            <div class="o-cardBlock__title">{{ formatSelectedDate }}</div>
+          </div>
+        </div>
       </div>
     </section>
 
