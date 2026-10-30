@@ -1,7 +1,21 @@
+// 引入全域基礎設定
+@use "./base/fonts";
+
 // 引入頁面
 @use "./pages/home";
 
+// 引入自訂元件
+@use "./molecule/cards";
 @use "./organism/blocks";
+
+// 引入套件修改
+@use "./vendor/el-calendar";
+
+:root {
+  --el-font-family:
+    "Microsoft JhengHei", "微軟正黑體", "PingFang TC", "Noto Sans TC", Arial,
+    sans-serif;
+}
 
 *,
 *::before,
@@ -12,4 +26,5 @@
 // 頁面背景
 body {
   background-color: var(--el-bg-color-page);
+  font-family: var(--el-font-family);
 }

@@ -1,0 +1,34 @@
+.m-recordCard {
+  position: relative;
+  min-height: 100%;
+
+  &__dateBadge {
+    position: absolute;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100px;
+  }
+
+  &__month {
+    font-family: "Sora", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-variant-numeric: tabular-nums;
+  }
+
+  &__day {
+    margin-top: 12px;
+    font-family: "Sora", sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 0.7;
+    letter-spacing: -0.05em;
+    font-variant-numeric: tabular-nums;
+  }
+}

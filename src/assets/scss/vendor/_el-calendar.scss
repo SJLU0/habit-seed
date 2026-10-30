@@ -1,0 +1,39 @@
+.el-calendar {
+  $b: &;
+
+  border-radius: 20px;
+  border: 1px solid var(--el-border-color-light);
+
+  &__header {
+    padding: 20px;
+  }
+
+  &__title {
+    font-family: "Sora", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+  }
+
+  &__body {
+    padding: 12px 20px 20px 20px;
+  }
+}
+
+.el-calendar-table {
+  td {
+    // &.is-selected {
+    //   background-color: var(--el-color-success-light-8);
+    // }
+
+    // &.is-today {
+    //   color: var(--el-color-success);
+    // }
+  }
+}
+
+.el-button {
+  $b: &;
+
+  padding: 8px 16px;
+}
